@@ -36,6 +36,7 @@ class App extends Component {
         const filteredRobots = robots.filter(robot => {
             return robot.name.toLowerCase().includes(searchField.toLowerCase());
         });
+        console.log("Robots length: ", robots.length);
         if (!robots.length) {
             return <h1>Loading...</h1> // Could use a loading bar here instead.
         }
